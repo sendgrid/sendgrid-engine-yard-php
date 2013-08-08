@@ -3,7 +3,7 @@
 Open Emails is a sample app by SendGrid to demonstrate how to deploy SendGrid on Engine Yard.
 
 ## Deploying the App
-- To deploy this app and integrate SendGrid follow the instructions [in our documentation](http://sendgrid.com/docs/Integrate/Partners/EngineYard.html#-Deploying-a-PHP-App-With-SendGrid-and-Engine-Yard)
+- To deploy this app and integrate SendGrid follow the instructions [in our documentation](http://sendgrid.github.io/sendgrid-engine-yard-php/)
 - You must then [point the Parse Webhook for your domain](http://sendgrid.com/docs/API_Reference/Webhooks/parse.html) at your instance, specifically at the file `/email.php`. Log in to SendGrid.com with the credentials provided by Engine Yard, to do this.
 
 ## Requirements
