@@ -230,19 +230,19 @@ $sendgrid->smtp->send($mail);
 <ol>
 <li>Create a new application. Confirm the language is PHP. Engine Yard requires your Git repository to be hosted elsewhere. You can deploy using <a href="http://github.com/sendgrid/sendgrid-engine-yard-php">our sample app (on GitHub)</a> or your own.
 
-<p><img alt="Creating an Engine Yard Application" src="http://sendgrid.com/docs/images/engineyard_1_create.png" /></p></li>
+<p><img alt="Creating an Engine Yard Application" src="images/engineyard_1_create.png" /></p></li>
 <li>Next, create a new environment for your application. If you&#8217;re using our sample app, ensure your database is set to MySQL.
 
-<p><img alt="MySQL" src="http://sendgrid.com/docs/images/engineyard_2_database.png" /></p></li>
+<p><img alt="MySQL" src="images/engineyard_2_database.png" /></p></li>
 <li>Choose your configuration and hit &#8220;Boot&#8221;</li>
 <li>In the Add-ons section of the environment, click &#8220;New Add-on&#8221;
 
-<p><img alt="New Add-on" src="http://sendgrid.com/docs/images/engineyard_3_addon.png" /></p></li>
+<p><img alt="New Add-on" src="images/engineyard_3_addon.png" /></p></li>
 <li>Select SendGrid. If this is your first time adding SendGrid to this account, you&#8217;ll need to Setup SendGrid. Follow the prompts and select your plan.
 <ul><li>After configuring SendGrid, you&#8217;ll need to go through the process of adding a new Add-on once again, in your environment, select &#8220;New Add-on&#8221;</li></ul></li>
 <li>Select SendGrid. Once on the setup page, chose the environment you wish to add SendGrid.
 
-<p><img alt="Select an Environment to Add SendGrid" src="http://sendgrid.com/docs/images/engineyard_4_environmentselect.png" /></p></li>
+<p><img alt="Select an Environment to Add SendGrid" src="images/engineyard_4_environmentselect.png" /></p></li>
 <li>Once you&#8217;ve added SendGrid to you environment, return to the Environment&#8217;s dashboard. SendGrid should now be in the Add-ons Section, take note of the Keys/Variables (they may initially be hidden).</li>
 <li>Under Application Instances, find your application instance, and click SSH. This will launch your SSH client. (For this to work, you must have provided Engine Yard with your public key, _before_ booting the instance, if you have not already, provide Engine Yard with your Public Key, edit your environment to include it, and hit apply.)</li>
 <li>Now you must edit your environment variables, they&#8217;re stored in a shared file. To edit them: <code>nano /data/YOUR_APP_NAME/shared/config/env.custom</code> add the lines:
